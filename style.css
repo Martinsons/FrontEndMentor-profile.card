@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* font-family: 'Kumbh Sans', sans-serif;  400, 700 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  position: relative;
+  overflow: hidden;
+}
+
+.pattern-top {
+  position: absolute;
+  z-index: -1;
+  top: -30%;
+  left: -40%;
+}
+
+.pattern-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: -25%;
+  right: -40%;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem;
+  background-color: #fff;
+  max-width: 600px;
+  box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card-top {
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-middle {
+  text-align: center;
+}
+
+.card-middle img {
+  margin-top: -50px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.card-middle h4 {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  color: hsl(229, 23%, 23%);
+}
+
+.card-middle span {
+  margin: 0 0.25rem;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.city {
+  margin: 1rem 0 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(229, 23%, 23%);
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  width: 100%;
+  text-align: center;
+}
+
+.info h3 {
+  color: hsl(229, 23%, 23%);
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.info small {
+  font-size: 1.1rem;
+  letter-spacing: 0.25rem;
+}
+
+.info:nth-child(2) {
+  /* padding: 0 4rem; */
+  margin: 0 4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .pattern-top {
+    top: -40%;
+  }
+
+  .pattern-bottom {
+    bottom: -40%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .pattern-top {
+    top: -70%;
+    left: -45%;
+  }
+
+  .pattern-bottom {
+    bottom: -70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pattern-top {
+    top: -60%;
+    left: -20%;
+  }
+
+  .pattern-bottom {
+    bottom: -60%;
+    right: -20%;
+  }
+}
